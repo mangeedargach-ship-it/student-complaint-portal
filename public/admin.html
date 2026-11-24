@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="om">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard - Portalii Komii</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">Admin Dashboard</div>
+    <div class="nav-links">
+      <a href="index.html">Fuula Barataa</a>
+      <a href="admin.html" class="active">Fuula Admin</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+      <div class="admin-header">
+        <div>
+          <h2>Komiiwwan Barattootaa Hunda</h2>
+          <p class="subtitle">Haala komii jijjiiri ykn komii xumurame haqi.</p>
+        </div>
+        <select id="filter-status" class="filter-select">
+          <option value="All">Hunda Agarsiisi (All)</option>
+          <option value="Pending">Pending (Eegaa kan jiru)</option>
+          <option value="In Progress">In Progress (Hojjetamaa kan jiru)</option>
+          <option value="Resolved">Resolved (Furmaata kan argate)</option>
+        </select>
+      </div>
+
+      <div id="admin-complaint-list" class="complaint-list">
+        <!-- Komiiwwan Admin JavaScript dhaan asitti dhufu -->
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

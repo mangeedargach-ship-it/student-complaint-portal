@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="om">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portalii Komii Barattootaa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">Student Complaint Portal</div>
+    <div class="nav-links">
+      <a href="index.html" class="active">Fuula Barataa</a>
+      <a href="admin.html">Fuula Admin</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+      <h2>Komii Haaraa Galchi</h2>
+      <p class="subtitle">Rakkoo si qunname ifatti guutuun ergi.</p>
+
+      <form id="complaint-form">
+        <div class="form-group">
+          <label for="student_name">Maqaa Guutuu</label>
+          <input type="text" id="student_name" placeholder="Fkn: Caalaa Bultii" required />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="student_id">Lakkoofsa Eenyummaa (Student ID)</label>
+            <input type="text" id="student_id" placeholder="Fkn: UGR/1234/15" required />
+          </div>
+
+          <div class="form-group">
+            <label for="department">Dippaartimantii (Department)</label>
+            <input type="text" id="department" placeholder="Fkn: Computer Science" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="category">Gosa Komii (Category)</label>
+          <select id="category" required>
+            <option value="">-- Filadhu --</option>
+            <option value="Academic / Qabxii">Academic / Qabxii</option>
+            <option value="Dormitory / Bultii">Dormitory / Bultii</option>
+            <option value="Cafeteria / Nyaata">Cafeteria / Nyaata</option>
+            <option value="Library / Mana Kitaabaa">Library / Mana Kitaabaa</option>
+            <option value="IT & Internet">IT & Internet</option>
+            <option value="Kan Biraa">Kan Biraa</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Ibsa Komii (Description)</label>
+          <textarea id="description" rows="4" placeholder="Komii kee bal'inaan asitti barreessi..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">Komii Ergi</button>
+      </form>
+      <p id="form-message" class="message"></p>
+    </div>
+
+    <div class="card">
+      <h2>Komiiwwan Dhiyaatanii fi Haala Isaanii</h2>
+      <div id="student-complaint-list" class="complaint-list">
+        <!-- Komiiwwan JavaScript dhaan asitti dhufu -->
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
